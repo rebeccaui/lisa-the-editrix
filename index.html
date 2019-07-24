@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--Link to CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Lisa The Editrix</title>
 </head>
 <body>
@@ -17,7 +19,6 @@
     </div>
 
     <!-- Navbar: About Me, What I Do, Resume, References, Contact -->
-    <!-- Translucent, Dark Grey or Dark Eggplant -->
     <nav class="navbar navbar-expand-lg justify-content-center">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,18 +48,16 @@
         </ul>
     </nav>
 
-    <!-- Banner Image: Lisa Cunningham on Typewriter Keys -->
-    <!-- <div class="container-fluid">
-        <img src="https://via.placeholder.com/1600x270.png/808080/000000?Text=Typewriter">
-    </div> -->
-
     <!-- About Me: Image and Description -->
     <section class="section" id="about-me-section">
         <div class="jumbotron jumbotron-fluid jumbo-about-me effect6">
-            <!-- <div class="card overflow-hidden"> -->
-                <!-- <img alt="Lisa Cunningham Headshot" src="assets/img/lisa-headshot.jpg" class="img-fluid" style="max-width: 100%; height: auto;"> -->
-                <div class="top-right">Top Right</div>
-            <!-- </div> -->
+            <div class="card bg-dark text-white">
+                <img alt="Lisa Cunningham Headshot" src="assets/img/lisa-headshot-3.jpg" class="card-img" alt="Lisa Headshot">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-right">Books = Life</h5>
+                    <p class="card-text text-right">Books are love and made of confetti and rainbow spirits.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -86,8 +85,8 @@
 
     <!-- Resume: Printable PDF Button -->
     <section class="section" id="resume-section">
-        <div class="jumbotron jumbotron-fluid effect6">
-            <div class="container">
+        <div class="jumbotron jumbotron-fluid jumbo-resume effect6">
+            <div class="container-fluid">
                 <div class="row flex-column">
                     <div class="col-12">
                         <img src="https://via.placeholder.com/900x200.png/000000/808080?Text=Digital.com">
@@ -128,15 +127,110 @@
     </section>
 
     <!-- Contact: Formspree -->
-    <section class="section" id="contact-section">
-        <div class="jumbotron jumbotron-fluid effect6">
-            <div class="container">
-                <div class="row">
-
+    <section id="contact class" class="container content-section text-center">
+        <h1 class="brand-heading">Contact</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form id="responsiveForm" action="">
+                        <div class="form-group">
+                            <label for="name">Name:</label> 
+                            <input type="text" class="form-control" id="name" name="name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label> 
+                            <input type="text" class="form-control" id="email" name="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="occasion">Message:</label> 
+                            <input type="text" class="form-control" id="occasion" name="occasion"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="form-control btn btn-primary" value="Send"/>
+                        </div>
+                    </form>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
+        <div id="footer" class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+
+                    <div class="row align-items-stretch">
+                        <!--Social and links in one column as the divs differ in height-->
+                        <div class="flex-column col-sm">
+                            <div class="social">
+                                <a aria-label="LinkedIn" href="https://www.linkedin.com/in/lisa-cunningham-a6107234/" class="social-button linkedin">
+                                    <span class="fa-stack fa-lg"> <!--attr aria-hidden="true"-->
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                <a aria-label="Medium" href="#" class="social-button instagram">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-medium-m fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                                <a aria-label="Instagram" href="https://instagram.com/" class="social-button instagram">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                
+                            <div class="footer-links">
+                                    <a class="footer-link" data-value="#contact" href="#contact">Contact</a>
+                                <br><a class="footer-link" data-value="#contact" href="#contact">Hire Me</a>
+                                <br><a class="footer-link" data-value="#portfolio" href="#portfolio">Current Projects</a>
+                            </div>
+                            <div class="footer-links">
+                                <div class="dropdown"> 
+                                    <a class="footer-link dropdown-toggle dropdown-toggle-split" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Privacy Policy
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <span class="dropdown-item">If you grew up with siblings, you already know that this concept doesn't truly exist.</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown"> 
+                                    <a class="footer-link dropdown-toggle dropdown-toggle-split" href="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Terms of Usage
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <span class="dropdown-item">This is where the terms of usage would go... IF I HAD ONE.</span>
+                                    </div>
+                                </div>
+                                <!-- <a class="footer-link" href="#">Sitemap</a> -->
+                            </div>
+                        </div>
+                    </div> <!--Footer Links Row End (1 column inside)-->
+                </div> <!--Footer Links Col-8 End (1 row inside)-->
+
+                <div class="col-md-6 col-sm-12">
+                    <!--LOGO-->
+                    <a class="footer-brand" href="#">
+                        <img class="name-logo rounded-circle d-inline-block align-top img-fluid" src="assets/img/4.png" alt="RW Logo">
+                    </a>
+                </div> <!--Footer Logo Col-4 End (1 row inside)-->
+
+            </div> <!--First Footer Row End-->
+
+            <div class="row">
+                <div class="col">
+                    <div class="copyright">
+                        <p><span class="footer-text">Lisa Cunningham &copy; 2019<span id="year" class="footer-text"></span></span></p>
+                    </div>
+                </div>
+            </div> <!--Second Footer Row End-->
+        </div>
 
     <!-- JS Dependencies -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -145,3 +239,18 @@
     <script type="text/javascript" src="assets/js/logic.js"></script>
 </body>
 </html>
+
+
+<!-- 
+    Responsive Breakpoints, based on screen width:
+    (xs) — col-# screen width < 576px (This is the “default” tier)
+    sm — col-sm-# screen width ≥ 576px
+    md — col-md-# screen width ≥ 768px
+    lg — col-lg-# screen width ≥ 992px
+    xl — col-xl-# screen width ≥ 1200px 
+
+    Use `col` for Columns that evenly fill across the viewport
+    Use `col-auto` for Columns that shrink to fit their content
+    he Auto-layout Columns can be combined with the 12-unit Columns
+    The Auto-layout Columns have responsive tiers (-sm,-md,-lg,-xl) too!
+-->
