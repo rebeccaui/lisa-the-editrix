@@ -19,38 +19,59 @@
     </div>
 
     <!-- Navbar: About Me, What I Do, Resume, References, Contact -->
-    <nav class="navbar navbar-expand-lg justify-content-center">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">What I Do</a>
-            </li>
-            <li class="nav-item">
-                <img class="navbar-logo" src="assets/img/4.png" height="50px" width="80px">
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">References</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">What I Do</a>
+                </li>
+                <li class="nav-item">
+                    <img class="navbar-logo" src="assets/img/4.png" height="50px" width="80px">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">References</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+
+    <!-- markup structure
+    article, wrapping container
+        figure, wrapping the image
+        div, wrapping container for a quote and  the name of the testimonial
+    -->
+    <section class="section">
+        <article>
+            <figure>
+                <img alt="Lisa's circle headshot" src="assets/img/lisa-bw-whitespace-square.jpg" />
+            </figure>
+            <!-- Blockquote -->
+            <div class="container blockqoute-container">
+                <blockquote class="html-blockquote" id="live"></blockquote>
+                <div class="belongTo hidden" id="belongTo" ><i>Lisa Cunningham</i></div>
+            </div>
+        </article>
+    </section>
 
     <!-- About Me: Image and Description -->
     <section class="section" id="about-me-section">
-        <div class="jumbotron jumbotron-fluid jumbo-about-me effect6">
+        <div class="container-fluid jumbo-about-me">
             <div class="card bg-dark text-white">
                 <img alt="Lisa Cunningham Headshot" src="assets/img/lisa-headshot-3.jpg" class="card-img" alt="Lisa Headshot">
                 <div class="card-img-overlay">
@@ -63,8 +84,8 @@
 
     <!-- What I Do -->
     <section class="section" id="what-I-do-section">
-        <div class="jumbotron jumbotron-fluid effect6">
-            <div class="container">
+        <div class="container-fluid d-flex justify-content-around">
+            <!-- <div class="container"> -->
                 <div class="row">
                     <div class="col-lg-4 align-content-center">
                         <img class="rounded-circle hover-effect" src="assets/img/copywriting.jpg" alt="Generic placeholder image" width="150" height="150">
@@ -79,13 +100,13 @@
                         <h3>Proofreading</h3>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </section>
 
     <!-- Resume: Printable PDF Button -->
     <section class="section" id="resume-section">
-        <div class="jumbotron jumbotron-fluid jumbo-resume effect6">
+        <div class="container-fluid jumbo-resume">
             <div class="container-fluid">
                 <div class="row flex-column">
                     <div class="col-12">
@@ -99,7 +120,7 @@
 
     <!-- References: Carousel -->
     <section class="section" id="references-section">
-        <div class="jumbotron jumbotron-fluid effect6">
+        <div class="container-fluid">
             <div class="container">
                 <div>
                     <blockquote class="blockquote text-center item-1">
@@ -127,7 +148,7 @@
     </section>
 
     <!-- Contact: Formspree -->
-    <section id="contact class" class="container content-section text-center">
+    <section id="contact-section" class="container content-section text-center">
         <h1 class="brand-heading">Contact</h1>
         <div class="container-fluid">
             <div class="row">
@@ -147,7 +168,7 @@
                             <input type="text" class="form-control" id="occasion" name="occasion"/>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" class="form-control btn btn-primary" value="Send"/>
+                            <input type="submit" name="submit" class="form-control btn submit-btn" value="Send"/>
                         </div>
                     </form>
                 </div>
@@ -225,9 +246,9 @@
 
             <div class="row">
                 <div class="col">
-                    <div class="copyright">
+                    <!-- <div class="copyright"> -->
                         <p><span class="footer-text">Lisa Cunningham &copy; 2019<span id="year" class="footer-text"></span></span></p>
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div> <!--Second Footer Row End-->
         </div>

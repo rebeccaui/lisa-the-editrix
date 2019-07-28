@@ -4,10 +4,19 @@
     Eggplant: #6e2a49 #735 brown hsl(332,44,29) rgb(110,42,73)
     Ivory: #e0d4ab, #fffde8
 */
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Special+Elite|Open+Sans+Condensed:300&display=swap');
+/*  font-family: 'Merriweather', serif;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-family: 'Special Elite', cursive;
+*/
+
 
 html, body {
     background-color: #fffde8;
 }
+
+
 .jumbo-img {
     /* background-image: url("../img/typewriter-lisa.jpg"); */
     /* background-size: 2rem; */
@@ -36,10 +45,10 @@ html, body {
 }
 
 .navbar {
-    /*background-image: url('https://via.placeholder.com/1600x270.png/808080/000000?Text=Typewriter');*/
     background-color: #612547;
-    /* background-color: #531d45; */
     text-align: center;
+    box-shadow: 0px 2px 9px 4px rgba(0,0,0,0.75);
+    margin-bottom: 200px;
 }
 
 .navbar-brand {
@@ -47,13 +56,15 @@ html, body {
 }
 
 .navbar-logo {
-    padding-bottom: .5rem;
+    padding: 0 0 5px 0;
 }
 
 .nav-link {
     color: #fffde8;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
 }
 
 .nav-link:hover {
@@ -64,10 +75,208 @@ html, body {
     padding-top: .5rem;
 }
 
-.section {
-    padding: 30px;
-    margin: 100px 0px 20px 0px;
+.navbar-toggler-icon  {
+    background-color: white;
 }
+
+.section {
+    margin: 50px 0px 20px 0px;
+}
+
+/* CIRCLE IMG CARD
+===============================================*/
+
+/* * {
+
+} */
+
+article {
+  /* limit the width of the article container */
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  /* display the contents in a column */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(0, 0%, 100%);
+  line-height: 2;
+  border-radius: 10px;
+  /* transition for the transform property, updated in the script */
+  transition: transform 0.2s ease-out;
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+}
+article figure {
+  /* limit the width and height of the figure to show the image in a circle */
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  /* specify negative margin matching half the height of the element */
+  margin-top: -160px;
+  /* position relative for the pseudo element */
+  position: relative;
+  
+}
+article figure:before {
+  /* add a border around the figure matching the color of the background, faking the clip */
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 103%;
+  height: 103%;
+  transform: translate(-50%, -50%);
+  border: .35rem solid #612547;
+  /* box-shadow: 0 1px hsla(0, 0%, 0%, 0.1); */
+}
+article figure img {
+  /* stretch the image to cover the size of the wrapping container */
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  /* object fit to maintain the aspect ratio and fit the width/height */
+  object-fit: cover;
+  box-shadow: 0px -4px 7px 3px rgba(0,0,0,0.75);
+}
+
+article div {
+  /* center the text in the div container */
+  text-align: center;
+  margin: 2rem;
+}
+
+#belongTo {
+  /* considerably reduce the size of the heading */
+  color: hsl(260, 5%, 55%);
+  font-family: 'Special Elite', cursive;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+
+/* BLOCKQUOTE 
+===============================================*/
+.blockqoute-container {
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    padding: 10px;
+}
+.html-blockquote {
+    position: relative;
+    padding-left: 50px;
+    font-family: 'Special Elite', cursive;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color:#333;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+.html-blockquote::before,
+.html-blockquote::after {
+    color: #c6c6c6;
+    font-size: 2.0em;
+    font-weight: 400;
+    line-height: 0.1em;
+}
+.html-blockquote::before {
+    position: absolute;
+    left:0;
+    content: open-quote;
+    margin-right: 0.15em;
+    vertical-align: -0.15em;
+}
+.html-blockquote::after {
+    content: close-quote;
+    vertical-align: -0.7em;
+}
+  
+  
+  
+@-webkit-keyframes live {
+    0% {
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
+            opacity: 1;
+    }
+        
+    50% {
+            -webkit-transform: scale(1);
+        transform: scale(1);
+            opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: scale(0.97);
+        transform: scale(0.97);
+            opacity: 1;
+    }
+}
+  
+@keyframes live {
+    0% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+          opacity: 1;
+    }
+  
+    50% {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97);
+          opacity: 0.4;
+    }
+      
+    100% {
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+          opacity: 1;
+    }
+}
+  
+.yellow {
+    background-color: #f0ec75;
+}
+  
+.live {
+    -webkit-animation: live 10s infinite;
+}
+
+.belongTo {
+    text-align: right;
+    margin-right: 200px;
+    margin-top: -50px;
+    font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+  
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* ABOUT ME
+================================================*/
 
 .jumbo-about-me {
     /* background-image: url("../img/lisa-headshot-3.jpg");
@@ -81,6 +290,42 @@ html, body {
     position: absolute;
     top: 8px;
     right: 16px;
+}
+
+
+/* WHAT I DO 
+=================================================*/
+
+#what-I-do-section {
+	color: #fff;
+	margin-bottom: 40px;
+	background-image: url("../img/library-card-2.jpg");
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 500px;
+	height: 100%;
+	background-size: cover;
+}
+
+#what-I-do-section .container-fluid {
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+}
+
+#what-I-do-section .container-fluid .row {
+    max-width: 1140px;
+    height: 100%;
+	margin: auto 0;
+}
+
+
+/* RESUME
+=================================================*/
+
+.resume-section, .jumbo-resume {
+    height: 200px;
 }
 
 .resume-section, .jumbo-resume {
@@ -240,11 +485,16 @@ h3 {
     /* background-image: url("/assets/img/cards/2.jpg"); */
     background-size: cover;
     background-size: 100% 100%;
-    
     min-height: 650px;
     padding: 80px;
     padding-top: 120px;
-  }
+    color: #612547;
+}
+
+.submit-btn {
+    background: #612547;
+    color: #fffde8;
+}
 
 /*   FOOTER   
 ===========================================*/
@@ -252,11 +502,11 @@ h3 {
     /* position: absolute; */
     bottom: 0;
     width: 100%;
-    height: 330px;   /* Height of the footer */
+    min-height: 330px;   /* Height of the footer */
     background-color: #612547;
     text-align: center;
     padding: 20px 0 10px 0;
-    box-shadow: -2px 2px 5px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -3px 9px 4px rgba(0,0,0,0.75);
 }
 
 .social {
@@ -264,7 +514,7 @@ h3 {
     flex-wrap: nowrap;
 }
 
-.social-button, .footer-link:hover {
+.social-button {
     color: #ac5b7f;
     text-decoration: none;    
 }
@@ -285,14 +535,15 @@ h3 {
     text-decoration: none;    
 } 
 
-.footer-link:focus {
+.footer-link:focus, .footer-link:hover {
     text-decoration: hidden;
-    color: #f194be;
+    color: #fdc2dc;
     text-decoration: wavy;
 }
 
-#footer .col-6 {
+#footer .col-md-6 {
     justify-content: center;
+    padding: 10px 0;
 }
 
 #footer img {
@@ -302,9 +553,13 @@ h3 {
     max-width: 250px;
 }
 
-.copyright {
+#footer .col {
+    padding-top: 20px;
+}
+
+/* .copyright {
     margin: 10px 0 0 0;
-} 
+}  */
 
 .footer-text {
     text-align: center;
