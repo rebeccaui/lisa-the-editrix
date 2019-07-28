@@ -143,30 +143,33 @@ article figure img {
 article div {
   /* center the text in the div container */
   text-align: center;
-  margin: 2rem;
 }
 
 #belongTo {
-  /* considerably reduce the size of the heading */
-  color: hsl(260, 5%, 55%);
-  font-family: 'Special Elite', cursive;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
+    /* considerably reduce the size of the heading */
+    color: hsl(260, 5%, 55%);
+    font-family: 'Open Sans Condensed', sans-serif; 
+    /* font-family: 'Special Elite', cursive; */
+    /* font-family: 'Merriweather', serif; */
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    text-align: center;
 }
 
 
 /* BLOCKQUOTE 
 ===============================================*/
+
 .blockqoute-container {
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px auto;
     width: 80%;
     padding: 10px;
 }
 .html-blockquote {
     position: relative;
-    padding-left: 50px;
+    margin: 0;
     font-family: 'Special Elite', cursive;
     font-size: 2.2rem;
     font-weight: 500;
@@ -181,8 +184,7 @@ article div {
     line-height: 0.1em;
 }
 .html-blockquote::before {
-    position: absolute;
-    left:0;
+    left: 0;
     content: open-quote;
     margin-right: 0.15em;
     vertical-align: -0.15em;
@@ -190,66 +192,7 @@ article div {
 .html-blockquote::after {
     content: close-quote;
     vertical-align: -0.7em;
-}
-  
-  
-  
-@-webkit-keyframes live {
-    0% {
-        -webkit-transform: scale(0.97);
-        transform: scale(0.97);
-            opacity: 1;
-    }
-        
-    50% {
-            -webkit-transform: scale(1);
-        transform: scale(1);
-            opacity: 0.4;
-    }
-
-    100% {
-        -webkit-transform: scale(0.97);
-        transform: scale(0.97);
-            opacity: 1;
-    }
-}
-  
-@keyframes live {
-    0% {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-          opacity: 1;
-    }
-  
-    50% {
-      -webkit-transform: scale(0.97);
-      -ms-transform: scale(0.97);
-      transform: scale(0.97);
-          opacity: 0.4;
-    }
-      
-    100% {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-          opacity: 1;
-    }
-}
-  
-.yellow {
-    background-color: #f0ec75;
-}
-  
-.live {
-    -webkit-animation: live 10s infinite;
-}
-
-.belongTo {
-    text-align: right;
-    margin-right: 200px;
-    margin-top: -50px;
-    font-size: 20px;
+    margin-left: 10px;
 }
 
 .hidden {
@@ -272,7 +215,6 @@ article div {
         opacity: 1;
     }
 }
-
 
 
 /* ABOUT ME

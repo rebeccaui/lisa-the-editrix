@@ -3,7 +3,7 @@ var txt = 'An editor who edits their own work has a fool for an editor.';
 var speed = 70;
 const typing = () => {
 	if (i < txt.length) {
-		document.getElementById("live").innerHTML += 		txt.charAt(i);
+		document.getElementById("live").innerHTML += txt.charAt(i);
 		i++;
 		setTimeout(typing, speed);
 	}else {
