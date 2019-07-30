@@ -54,6 +54,11 @@ html, body {
     margin-bottom: 230px;
 }
 
+.navbar-toggler {
+    padding: .25rem .5rem;
+    text-decoration: none;
+}
+
 .navbar-brand {
     margin: 0px 20px;
 }
@@ -76,10 +81,6 @@ html, body {
 
 .nav-item {
     padding-top: .5rem;
-}
-
-.navbar-toggler-icon  {
-    background-color: white;
 }
 
 .section {
@@ -267,8 +268,8 @@ article div {
     font-size: 1.5rem;
 }
 
-.col-lg-4 {
-    margin-bottom: 1.5rem;
+.col-md-4 {
+    margin: 1.5rem 0;
     text-align: center;
 }
 
@@ -402,11 +403,59 @@ h3 {
     padding: 80px;
     padding-top: 120px;
     color: #612547;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2rem;
 }
 
 .btn {
-    background: #612547;
-    color: #fffde8;
+    display: inline-block;
+    -moz-border-radius: .25em;
+    border-radius: .25em;
+    -webkit-box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.2);
+    background-color: #ac5b7f;
+    background-image: -moz-linear-gradient(#ac5b7f,#612547);
+    background-image: -ms-linear-gradient(#ac5b7f,#612547);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ac5b7f),color-stop(100%,#612547));
+    background-image: -webkit-linear-gradient(#ac5b7f,#612547);
+    background-image: -o-linear-gradient(#ac5b7f,#612547);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c88cc',endColorstr='#a8802f',GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c88cc', endColorstr='#a8802f', GradientType=0)";
+    background-image: linear-gradient(#ac5b7f, #612547);
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    min-width: 100px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.35);
+    font-family: 'Special Elite', cursive;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    transition: all linear .2s
+}
+
+.btn:hover, .btn:focus {
+    -webkit-box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.3), inset 0 12px 20px 2px #ac5b7f;
+    -moz-box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.3), inset 0 12px 20px 2px #ac5b7f;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.1), inset 0 -2px 0 0 rgba(0,0,0,0.3), inset 0 12px 20px 2px #ac5b7f;
+    color: #fdc2dc;
+    /* color: rgb(15, 202, 202); */
+}
+
+.btn:active {
+    -webkit-box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.2), inset 0 12px 20px 6px rgba(0,0,0,0.2), inset 0 0 2px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.2), inset 0 12px 20px 6px rgba(0,0,0,0.2), inset 0 0 2px 2px rgba(0,0,0,0.3);
+    box-shadow: inset 0 2px 0 0 rgba(0,0,0,0.2), inset 0 12px 20px 6px rgba(0,0,0,0.2), inset 0 0 2px 2px rgba(0,0,0,0.3);
+    color: #fdc2dc;
+    /* color: rgb(15, 202, 202); */
 }
 
 /*   FOOTER   
