@@ -1,0 +1,6 @@
+Edits:
+
+- Make quote card stay same height regardless of dynamic text height
+- Fix Reference carousel
+- Add section for 3 work samples
+    -> possibly put these in parallax section rather than circles
