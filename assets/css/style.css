@@ -334,8 +334,17 @@ h3 {
 .carousel-inner img {
     width: 100%;
     max-width: 1080px;
+    max-height: 500px;
     margin: auto;
     display: block;
+}
+
+.carousel-caption {
+    height: 100%;
+}
+
+.carousel-inner p {
+    color: #000;
 }
 
 
