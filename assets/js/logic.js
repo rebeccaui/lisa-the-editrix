@@ -36,12 +36,6 @@ typing();
   }, false);
 })();
 
-$(".references-container").css({ height: $(window).height() + "px" });
-
-$(window).on("resize", function() {
-  $(".references-container").css({ height: $(window).height() + "px" });
-});
-
 // $('.navbar-toggler').click(function() {
 //   $(this).toggleClass('active');
 // });
