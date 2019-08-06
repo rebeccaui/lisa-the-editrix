@@ -36,10 +36,10 @@ typing();
   }, false);
 })();
 
-$(".jumbotron").css({ height: $(window).height() + "px" });
+$(".references-container").css({ height: $(window).height() + "px" });
 
 $(window).on("resize", function() {
-  $(".jumbotron").css({ height: $(window).height() + "px" });
+  $(".references-container").css({ height: $(window).height() + "px" });
 });
 
 // $('.navbar-toggler').click(function() {
