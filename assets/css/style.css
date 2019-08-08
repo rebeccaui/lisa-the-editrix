@@ -16,9 +16,9 @@ html, body {
     background-color: #fffde8;
 }
 
-.jumbo-img {
-    /* background-image: url("../img/typewriter-lisa.jpg"); */
-    /* background-size: 2rem; */
+.jumbotron {
+    margin: 0;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,20 +27,24 @@ html, body {
     height: auto !important;
 }
 
-.jumbotron {
-    margin: 0;
-    height: auto;
-}
-
-.headshot-jumbotron {
-    padding: 0;
-    height: 100vh;
-    height: auto !important;
-}
-
 .typewriter-img {
     width: 100%;
     height: auto;
+}
+.brand-heading {
+    font-family: 'Special Elite', cursive;
+}
+#my-work-section + .carousel .brand-heading {
+  color: #fff !important;
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px 0 40px;
+  width: 80%;
+  background: rgba(0,0,0,0.75);
+  background: rgba(255,255,255,0.75);
+  background: rgba(97,37,71,0.75);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 
@@ -247,24 +251,17 @@ article div {
 
 #what-I-do-section {
 	color: #fff;
-	margin-bottom: 40px;
-	background-image: url("../img/library-card-2.jpg");
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 500px;
-	height: 100%;
-	background-size: cover;
-}
-
-#what-I-do-section .container-overlay{
-    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    background-color: #612547;
     min-height: 500px;
     height: 100%;
     width: 100%;
+    /* overflow: hidden;
+    position: relative; */
 }
 
-#what-I-do-section .container-fluid .row {
-    max-width: 1140px;
+#what-I-do-section .row {
+    /* max-width: 1140px; */
     height: 100%;
     width: 100%;
     font-family: 'Special Elite', cursive;
@@ -280,6 +277,32 @@ h3 {
     padding: .5rem 0 0 0;
     margin: .5rem 0rem
 }
+
+/* #what-I-do-section:before {
+    right: 50%;
+    border-right: 1000px solid transparent;
+    border-left: 1000px solid;
+}
+#what-I-do-section:after {
+    left: 50%;
+    border-left: 1000px solid transparent;
+    border-right: 1000px solid;
+}
+Ã¢â‚¬â€¹
+#what-I-do-section:after, #what-I-do-section:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    z-index: 100;
+/*  change the hieght and the color below */
+    /* border-bottom: 80px solid #fffde8;
+    -moz-transform: rotate(0.000001deg);
+    -webkit-transform: rotate(0.000001deg);
+    -o-transform: rotate(0.000001deg);
+    -ms-transform: rotate(0.000001deg);
+    transform: rotate(0.000001deg);
+} */
 
 /* Shadow Hover Effect, compliments of Joseph Espana */
 .hover-effect {
@@ -320,71 +343,89 @@ h3 {
 .hover-effect:hover::after {
     opacity: 1;
 }
-    
+
+/* MY WORK
+=================================================*/
+#my-work-section {
+    margin-bottom: 40px;
+    min-height: 400px;
+	height: 100%;
+}
+#my-work-section i {
+  font-size: 80px
+}
+#my-work-section a {
+  color: #612547;
+  -webkit-transition: all linear .2s;
+  -moz-transition: all linear .2s;
+  -o-transition: all linear .2s;
+  -ms-transition: all linear .2s;
+  transition: all linear .2s
+}
+#my-work-section a:hover {
+  color: #f194be;
+  text-decoration: none;
+}
 
 /* REFERENCES
 =================================================*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-
-.references-section {
-    min-height: 400px;
+#demo {
+    background-image: url("../img/library-card-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+    /* min-height: 500px; */
+    height: 100%;
+    /* padding-top: 40px; */
 }
 
-.references-container {
-    position: relative;
+#demo .container-overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    padding: 60px 0;
 }
 
-.references-blockquote { 
-    font-family: 'Open Sans', 'sans-serif';
-    color: #000; /* #cecece */
-    background: transparent; /* #222 */
-    overflow: hidden;
+.carousel-inner {
+    margin: 0px auto;
+    width: 80%;
+    text-align: center;
+/*     position: relative;
+    clear: both; */
+/*     padding: 40px 0 80px; */
+    background: rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.75);
+    background: rgba(97,37,71,0.75);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-
-.item-1, 
-.item-2, 
-.item-3 {
-	position: absolute;
+.carousel-inner .carousel-item {
+    padding: 0 10% 5rem;
+}
+.carousel-inner img {
+    width: 100%;
+    max-width: 1080px;
+    max-height: 500px;
+    margin: auto;
     display: block;
-	top: 2em;
-    width: 60%;
-    font-size: 1.5em;
-	animation-duration: 80s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
 }
-
-.item-1{
-	animation-name: anim-1;
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
 }
-
-.item-2{
-	animation-name: anim-2;
+.carousel-caption {
+    height: 100%;
+    color: #fff;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    padding: 0;
 }
-
-.item-3{
-	animation-name: anim-3;
+.carousel-indicators {
+  bottom: 50px;
 }
-
-@keyframes anim-1 {
-	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 20%; opacity: 1; }
-  33.33%, 100% { left: 40%; opacity: 0; }
-}
-
-@keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
-  41.63%, 58.29% { left: 20%; opacity: 1; }
-  66.66%, 100% { left: 40%; opacity: 0; }
-}
-
-@keyframes anim-3 {
-	0%, 66.66% { left: -100%; opacity: 0; }
-  74.96%, 91.62% { left: 20%; opacity: 1; }
-  100% { left: 40%; opacity: 0; }
-}
-
 
 /*   CONTACT SECTION
 ===========================================*/
@@ -534,7 +575,7 @@ h3 {
     text-align: center;
     color: #f194be;
     font-size: 16px;
-    font-family: ‘Arial’, ‘Helvetica Neue’, Helvetica, sans-serif;
+    font-family: Ã¢â‚¬ËœArialÃ¢â‚¬â„¢, Ã¢â‚¬ËœHelvetica NeueÃ¢â‚¬â„¢, Helvetica, sans-serif;
 } 
 
 
