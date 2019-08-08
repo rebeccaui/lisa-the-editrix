@@ -32,6 +32,23 @@ html, body {
     height: auto;
 }
 
+.brand-heading {
+    font-family: 'Special Elite', cursive;
+}
+
+#my-work-section + .carousel .brand-heading {
+    color: #fff !important;
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    width: 80%;
+    background: rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.75);
+    background: rgba(97,37,71,0.75);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
 
 /* NAVBAR
 =================================================*/
@@ -254,12 +271,13 @@ article div {
 }
 
 .col-md-4 {
+    padding-top: 1rem;
     margin: 1.5rem 0;
     text-align: center;
 }
 
 h3 {
-    padding: .5rem 0 0 0;
+    padding: 1rem 0 0 0;
     margin: .5rem 0rem
 }
 
@@ -332,20 +350,20 @@ h3 {
 /* MY WORK
 =================================================*/
 #my-work-section {
-    margin-bottom: 40px;
-    min-height: 400px;
+    margin-bottom: 80px;
 	height: 100%;
 }
 #my-work-section i {
-  font-size: 80px
+  font-size: 80px;
 }
 #my-work-section a {
-  color: #612547;
-  -webkit-transition: all linear .2s;
-  -moz-transition: all linear .2s;
-  -o-transition: all linear .2s;
-  -ms-transition: all linear .2s;
-  transition: all linear .2s
+    display: block;
+    color: #612547;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    transition: all linear .2s
 }
 #my-work-section a:hover {
   color: #f194be;
@@ -361,22 +379,34 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 40px;
-    min-height: 500px;
+    width: 100%;
     height: 100%;
 }
 
 #demo .container-overlay{
     background-color: rgba(0, 0, 0, 0.2);
-    min-height: 500px;
+    padding: 60px 0;   
     height: 100%;
     width: 100%;
 }
 
 .carousel-inner {
-    margin-bottom: 40px;
+    margin: 0px auto;
     width: 80%;
+    text-align: center;
+/*     position: relative;
+    clear: both; */
+/*     padding: 40px 0 80px; */
+    background: rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.75);
+    background: rgba(97,37,71,0.75);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
+.carousel-inner .carousel-item {
+    padding: 0 10% 5rem;
+}
 .carousel-inner img {
     width: 100%;
     max-width: 1080px;
@@ -384,10 +414,20 @@ h3 {
     margin: auto;
     display: block;
 }
-
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
 .carousel-caption {
-    height: 75%;
+    height: 100%;
     color: #fff;
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    padding: 0;
+}
+.carousel-indicators {
+  bottom: 50px;
 }
 
 /*   CONTACT SECTION
