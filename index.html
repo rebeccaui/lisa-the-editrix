@@ -9,7 +9,7 @@
     <!--Link to CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <title>Lisa The Editrix</title>
 </head>
 <body>
@@ -92,63 +92,75 @@
         </div>
     </section>
 
-    <!-- About Me: Image and Description -->
-    <!-- <section class="section" id="about-me-section">
-        <div class="container-fluid jumbo-about-me">
-            <div class="card bg-dark text-white">
-                <img alt="Lisa Cunningham Headshot" src="assets/img/lisa-headshot-3.jpg" class="card-img" alt="Lisa Headshot">
-                <div class="card-img-overlay">
-                    <h5 class="card-title text-right">Books = Life</h5>
-                    <p class="card-text text-right">Books are love and made of confetti and rainbow spirits.</p>
-                </div>
+    <!-- What I Do -->
+    <section class="section container-fluid container-overlay d-flex flex-column justify-content-center align-content-center" id="what-I-do-section">            
+        <div class="row">
+            <div class="col d-flex justify-content-center align-content-start">
+                <h1 class="brand-heading">What I Do</h1>
             </div>
         </div>
-    </section> -->
 
-    <!-- What I Do -->
-    <section class="section" id="what-I-do-section">
-        <div class="container-fluid container-overlay d-flex flex-column justify-content-around">
-            <div class="row">
-                <div class="col d-flex justify-content-center align-content-start">
-                    <h1>What I Do</h1>
-                </div>
+        <div class="row justify-content-around">
+            <div class="col-md-4 align-content-center">
+                <img class="rounded-circle hover-effect" src="assets/img/copywriting.jpg" alt="Generic placeholder image" width="150" height="150">
+                <h3>Copywriting</h3>
             </div>
-            <div class="container-fluid d-flex align-content-center">
+            <div class="col-md-4 align-content-center">
+                <img class="rounded-circle hover-effect" src="assets/img/editing-newspaper.jpg" alt="Generic placeholder image" width="150" height="150">
+                <h3>Editing</h3>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <img class="rounded-circle hover-effect" src="assets/img/proofreading.jpg" alt="Generic placeholder image" width="150" height="150">
+                <h3>Proofreading</h3>
+            </div>
+        </div>
+    </section>
 
-                <div class="row justify-content-around">
-                    <div class="col-md-4 align-content-center">
-                        <img class="rounded-circle hover-effect" src="assets/img/copywriting.jpg" alt="Generic placeholder image" width="150" height="150">
-                        <h3>Copywriting</h3>
-                    </div>
-                    <div class="col-md-4 align-content-center">
-                        <img class="rounded-circle hover-effect" src="assets/img/editing-newspaper.jpg" alt="Generic placeholder image" width="150" height="150">
-                        <h3>Editing</h3>
-                    </div>
-                    <div class="col-md-4 align-content-center">
-                        <img class="rounded-circle hover-effect" src="assets/img/proofreading.jpg" alt="Generic placeholder image" width="150" height="150">
-                        <h3>Proofreading</h3>
-                    </div>
-                </div>
+    <!-- My Work -->
+    <section class="section container-fluid d-flex flex-column justify-content-around" id="my-work-section">
+        <div class="row">
+            <div class="col d-flex justify-content-center align-content-center">
+                <h1 class="brand-heading">My Work</h1>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-4 align-content-center">
+                <a href="#" target="_blank"><i class="fa fa-handshake-o"></i>
+                <h3>Employee Handbook</h3></a>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <a href="#" target="_blank"><i class="fa fa-shield"></i>
+                <h3>Security Training Manual</h3></a>
+            </div>
+            <div class="col-md-4 align-content-center">
+                <a href="#" target="_blank"><i class="fa fa-book"></i>
+                <h3>Writing Publication</h3></a>
             </div>
         </div>
     </section>
 
     <!-- References: Carousel -->
     <div id="demo" class="carousel slide" data-ride="carousel">
-
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-          <li data-target="#demo" data-slide-to="3"></li>
-          <li data-target="#demo" data-slide-to="4"></li>
-        </ul>
+        <div class="container-fluid container-overlay d-flex flex-column justify-content-around">
+            <!-- <div class="row">
+                <div class="col d-flex justify-content-center align-content-start"> -->
+                    <h1 class="brand-heading">References</h1>
+                <!-- </div>
+            </div> -->
+        
         
         <!-- The slideshow -->
         <div class="carousel-inner">
+            <!-- Indicators -->
+        <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+              </ul>
           <div class="carousel-item active">
-            <img src="assets/img/paper28.png" alt="References" width="1100" height="500">
+                <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide">
             <div class="carousel-caption">
                 <p>Lisa Cunningham played a key role in revamping our new employee training and onboarding system. She restructured and edited the employee handbook. Her work with us included writing a comprehensive list of acronyms standard to industry for all new employees. She also edited our standards and requirements for PPE required required for all guest and employee access to the facility.</p>
                 <br>
@@ -156,7 +168,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/paper28.png" alt="References" width="1100" height="500">
+                <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide">
             <div class="carousel-caption">
                 <p>When I first opened my business and started hiring staff, I was overwhelmed with the day to day in addition to just keeping the lights on.  I was so relieved when Ms. Cunningham was able to essentially write my employee handbook and HR documents for me.  Lisa's attention to detail and quick turn around on the projects took a huge load off my plate in this intense time some of you know all too well.  The peace of mind that knowing your documents are up to legal standards and your staff is properly informed about policies and procedures is well worth the investment.</p>
                 <br>
@@ -164,7 +176,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/paper28.png" alt="References" width="1100" height="500">
+                <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide">
             <div class="carousel-caption">
                 <p>When we updated our State Standards for Teaching English (K-12), Lisa Cunningham proofread and edited the entire (800 page) document for clarity and consistency. She diligently completed the work without error and ahead of schedule.  I would definitely recommend her services to anyone looking for a proofreader or copyeditor for their business.</p>
                 <br>
@@ -172,34 +184,38 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/paper28.png" alt="References" width="1100" height="500">
+                <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide">
             <div class="carousel-caption">
                 <p>I was at a party getting into an argument with somebody. I told the guy, ‘I'm not putting up with this bullshit.’ Lisa corrected me: ‘You mean this bullshit is something up with which you shall not put.’ In your face, drunk guy!</p>
                 <br>
-                <fp>Kahle Davis, <i>Owner/Operator of Star Community Bar</i></p>
+                <p>Kahle Davis, <i>Owner/Operator of Star Community Bar</i></p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/img/paper28.png" alt="References" width="1100" height="500">
+                <img class="img-fluid carousel-img" src="assets/img/overlay-block.jpg" alt="First slide">
             <div class="carousel-caption">
                 <p>When the college was going through a massive period of reorganization, Ms. Cunningham edited a number of operational guideline documents for our department as well as several others. Without her help, the process would have taken several more months to edit through committees — her work saved us a significant amount of time and money, and was invaluable to our continued smooth operation.</p>
                 <br>
                 <p>Traci Thompson, <i>Department Chair of English, WGTC</i></p>
             </div>
           </div>
+
+          <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
         </div>
         
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+        
+
+        </div>
       </div>
    
 
-      
+
     <!-- Contact: Formspree -->
     <section id="contact-section" class="container content-section text-center">
         <h1 class="brand-heading">Contact</h1>
@@ -207,7 +223,7 @@
             <div class="row">
                 <div class="col-xl-3 col-md-2 col-sm-1"></div>
                 <div class="col-xl-6 col-md-8 col-sm-10">
-                    <form id="responsiveForm" action="">
+                    <form id="responsiveForm" action="https://formspree.io/lisa.awesome@gmail.com">
                         <div class="form-group">
                             <label for="name">Name:</label> 
                             <input type="text" class="form-control" id="name" name="name" required="required"/>
