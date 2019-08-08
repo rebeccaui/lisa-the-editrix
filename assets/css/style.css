@@ -16,23 +16,12 @@ html, body {
     background-color: #fffde8;
 }
 
-.jumbo-img {
-    /* background-image: url("../img/typewriter-lisa.jpg"); */
-    /* background-size: 2rem; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-    height: 100vh;
-    height: auto !important;
-}
-
 .jumbotron {
     margin: 0;
     height: auto;
-}
-
-.headshot-jumbotron {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0;
     height: 100vh;
     height: auto !important;
@@ -247,24 +236,17 @@ article div {
 
 #what-I-do-section {
 	color: #fff;
-	margin-bottom: 40px;
-	background-image: url("../img/library-card-2.jpg");
-	background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 500px;
-	height: 100%;
-	background-size: cover;
-}
-
-#what-I-do-section .container-overlay{
-    background-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    background-color: #612547;
     min-height: 500px;
     height: 100%;
     width: 100%;
+    /* overflow: hidden;
+    position: relative; */
 }
 
-#what-I-do-section .container-fluid .row {
-    max-width: 1140px;
+#what-I-do-section .row {
+    /* max-width: 1140px; */
     height: 100%;
     width: 100%;
     font-family: 'Special Elite', cursive;
@@ -280,6 +262,32 @@ h3 {
     padding: .5rem 0 0 0;
     margin: .5rem 0rem
 }
+
+/* #what-I-do-section:before {
+    right: 50%;
+    border-right: 1000px solid transparent;
+    border-left: 1000px solid;
+}
+#what-I-do-section:after {
+    left: 50%;
+    border-left: 1000px solid transparent;
+    border-right: 1000px solid;
+}
+​
+#what-I-do-section:after, #what-I-do-section:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    z-index: 100;
+/*  change the hieght and the color below */
+    /* border-bottom: 80px solid #fffde8;
+    -moz-transform: rotate(0.000001deg);
+    -webkit-transform: rotate(0.000001deg);
+    -o-transform: rotate(0.000001deg);
+    -ms-transform: rotate(0.000001deg);
+    transform: rotate(0.000001deg);
+} */
 
 /* Shadow Hover Effect, compliments of Joseph Espana */
 .hover-effect {
@@ -320,15 +328,53 @@ h3 {
 .hover-effect:hover::after {
     opacity: 1;
 }
-    
+
+/* MY WORK
+=================================================*/
+#my-work-section {
+    margin-bottom: 40px;
+    min-height: 400px;
+	height: 100%;
+}
+#my-work-section i {
+  font-size: 80px
+}
+#my-work-section a {
+  color: #612547;
+  -webkit-transition: all linear .2s;
+  -moz-transition: all linear .2s;
+  -o-transition: all linear .2s;
+  -ms-transition: all linear .2s;
+  transition: all linear .2s
+}
+#my-work-section a:hover {
+  color: #f194be;
+  text-decoration: none;
+}
 
 /* REFERENCES
 =================================================*/
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+#demo {
+    background-image: url("../img/library-card-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+    min-height: 500px;
+    height: 100%;
+}
 
-.references-section {
-    min-height: 400px;
+#demo .container-overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 500px;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-inner {
+    margin-bottom: 40px;
+    width: 80%;
 }
 
 .carousel-inner img {
@@ -340,13 +386,9 @@ h3 {
 }
 
 .carousel-caption {
-    height: 100%;
+    height: 75%;
+    color: #fff;
 }
-
-.carousel-inner p {
-    color: #000;
-}
-
 
 /*   CONTACT SECTION
 ===========================================*/
