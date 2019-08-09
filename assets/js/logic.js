@@ -1,3 +1,5 @@
+// document.ready(function() {
+
 var i = 0;
 var txt = 'An editor who edits their own work has a fool for an editor.';
 var speed = 70;
@@ -16,6 +18,9 @@ const typing = () => {
 
 typing();
 
+// $('.navbar-nav>li>a').on('click', function(){
+//   $('.navbar-collapse').collapse('hide');
+// });
 
 // For disabling form submissions if there are invalid fields
 (function() {
@@ -35,6 +40,8 @@ typing();
     });
   }, false);
 })();
+
+// });
 
 // $('.navbar-toggler').click(function() {
 //   $(this).toggleClass('active');

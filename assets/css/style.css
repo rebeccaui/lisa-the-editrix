@@ -14,6 +14,7 @@
 
 html, body {
     background-color: #fffde8;
+    scroll-behavior: smooth;
 }
 
 .jumbotron {
@@ -253,11 +254,11 @@ article div {
 
 #what-I-do-section {
 	color: #fff;
-    margin-bottom: 40px;
     background-color: #612547;
     min-height: 500px;
     height: 100%;
     width: 100%;
+    padding: 80px 0;
     /* overflow: hidden;
     position: relative; */
 }
@@ -406,7 +407,9 @@ h3 {
 
 .carousel-inner .carousel-item {
     padding: 0 10% 5rem;
+    height: 350px; /* NOT PERMANENT */
 }
+
 .carousel-inner img {
     width: 100%;
     max-width: 1080px;
@@ -414,6 +417,7 @@ h3 {
     margin: auto;
     display: block;
 }
+
 .carousel-control-next, .carousel-control-prev {
     width: 10%;
 }
