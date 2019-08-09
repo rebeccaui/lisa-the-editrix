@@ -1,0 +1,18 @@
+Edits:
+
+- Make quote card stay same height regardless of dynamic text height
+- Smaller headshot
+
+- Make Reference section stay same height even with larger text
+    -> add media query to not show carousel indicators on tablet
+
+- Navbar 
+    -> scroll feature
+    -> close upon clicking
+
+- Mobile Spacing:
+    -> Between buttons
+    -> Above - What I Do
+    -> Under - My Work
+
+- Test Form, add safety

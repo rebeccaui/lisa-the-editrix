@@ -14,6 +14,7 @@
 
 html, body {
     background-color: #fffde8;
+    scroll-behavior: smooth;
 }
 
 .jumbotron {
@@ -31,21 +32,23 @@ html, body {
     width: 100%;
     height: auto;
 }
+
 .brand-heading {
     font-family: 'Special Elite', cursive;
 }
+
 #my-work-section + .carousel .brand-heading {
-  color: #fff !important;
-  text-align: center;
-  margin: 0 auto;
-  padding: 60px 0 40px;
-  width: 80%;
-  background: rgba(0,0,0,0.75);
-  background: rgba(255,255,255,0.75);
-  background: rgba(97,37,71,0.75);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+    color: #fff !important;
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    width: 80%;
+    background: rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.75);
+    background: rgba(97,37,71,0.9);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
 
 /* NAVBAR
@@ -269,12 +272,13 @@ article div {
 }
 
 .col-md-4 {
+    padding-top: 1rem;
     margin: 1.5rem 0;
     text-align: center;
 }
 
 h3 {
-    padding: .5rem 0 0 0;
+    padding: 1rem 0 0 0;
     margin: .5rem 0rem
 }
 
@@ -288,7 +292,7 @@ h3 {
     border-left: 1000px solid transparent;
     border-right: 1000px solid;
 }
-Ã¢â‚¬â€¹
+â€‹
 #what-I-do-section:after, #what-I-do-section:before {
     content: '';
     position: absolute;
@@ -347,28 +351,6 @@ h3 {
 /* MY WORK
 =================================================*/
 #my-work-section {
-    margin-bottom: 40px;
-    min-height: 400px;
-	height: 100%;
-}
-#my-work-section i {
-  font-size: 80px
-}
-#my-work-section a {
-  color: #612547;
-  -webkit-transition: all linear .2s;
-  -moz-transition: all linear .2s;
-  -o-transition: all linear .2s;
-  -ms-transition: all linear .2s;
-  transition: all linear .2s
-}
-#my-work-section a:hover {
-  color: #f194be;
-  text-decoration: none;
-}
-
-/* REFERENCES
-=================================================*/
 
 #demo {
     background-image: url("../img/library-card-2.jpg");
@@ -401,6 +383,75 @@ h3 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.carousel-inner .carousel-item {
+    padding: 0 10% 5rem;
+    height: 250px;
+}
+.carousel-inner img {
+    width: 100%;
+    max-width: 1080px;
+    max-height: 500px;
+    margin: auto;
+    display: block;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+=======
+    margin-bottom: 80px;
+	height: 100%;
+}
+#my-work-section i {
+  font-size: 80px;
+}
+#my-work-section a {
+    display: block;
+    color: #612547;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    transition: all linear .2s
+}
+#my-work-section a:hover {
+  color: #f194be;
+  text-decoration: none;
+}
+
+/* REFERENCES
+=================================================*/
+
+#demo {
+    background-image: url("../img/library-card-2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+#demo .container-overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 60px 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-inner {
+    margin: 0px auto;
+    width: 80%;
+    text-align: center;
+    /*     position: relative;
+    clear: both; */
+    /*     padding: 40px 0 80px; */
+    background: rgba(0,0,0,0.75);
+    background: rgba(255,255,255,0.75);
+    background: rgba(97,37,71,0.9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .carousel-inner .carousel-item {
     padding: 0 10% 5rem;
 }
@@ -575,7 +626,7 @@ h3 {
     text-align: center;
     color: #f194be;
     font-size: 16px;
-    font-family: Ã¢â‚¬ËœArialÃ¢â‚¬â„¢, Ã¢â‚¬ËœHelvetica NeueÃ¢â‚¬â„¢, Helvetica, sans-serif;
+    font-family: ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ArialÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢, ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“Helvetica NeueÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢, Helvetica, sans-serif;
 } 
 
 
