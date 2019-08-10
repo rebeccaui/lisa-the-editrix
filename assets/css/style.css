@@ -97,6 +97,10 @@ button:focus {
 .section {
     margin: 80px 0px 20px 0px;
 }
+section#resume-section {
+    margin-top:  40px;
+    margin-bottom: 0;
+}
 
 
 /* CIRCLE IMG CARD
@@ -233,7 +237,7 @@ article div {
 =================================================*/
 
 .resume-column {
-    padding: 15px;
+    padding: 0;
 }
 
 .resume-column .btn {
@@ -241,7 +245,7 @@ article div {
 }
 
 .divider-column {
-    padding: 40px 15px 20px 15px;
+    padding: 40px 15px 0px 15px;
 }
 
 .divider-img {
@@ -254,11 +258,11 @@ article div {
 
 #what-I-do-section {
 	color: #fff;
-    margin-bottom: 40px;
     background-color: #612547;
     min-height: 500px;
     height: 100%;
     width: 100%;
+    padding: 80px 0;
     /* overflow: hidden;
     position: relative; */
 }
@@ -273,7 +277,7 @@ article div {
 
 .col-md-4 {
     padding-top: 1rem;
-    margin: 1.5rem 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -292,7 +296,7 @@ h3 {
     border-left: 1000px solid transparent;
     border-right: 1000px solid;
 }
-â€‹
+Ã¢â‚¬â€¹
 #what-I-do-section:after, #what-I-do-section:before {
     content: '';
     position: absolute;
@@ -454,7 +458,9 @@ h3 {
 
 .carousel-inner .carousel-item {
     padding: 0 10% 5rem;
+    height: 350px; /* NOT PERMANENT */
 }
+
 .carousel-inner img {
     width: 100%;
     max-width: 1080px;
@@ -462,6 +468,7 @@ h3 {
     margin: auto;
     display: block;
 }
+
 .carousel-control-next, .carousel-control-prev {
     width: 10%;
 }
@@ -626,7 +633,7 @@ h3 {
     text-align: center;
     color: #f194be;
     font-size: 16px;
-    font-family: ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ArialÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢, ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“Helvetica NeueÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢, Helvetica, sans-serif;
+    font-family: ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œArialÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢, ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œHelvetica NeueÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢, Helvetica, sans-serif;
 } 
 
 

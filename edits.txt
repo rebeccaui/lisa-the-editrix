@@ -7,7 +7,7 @@ Edits:
     -> add media query to not show carousel indicators on tablet
 
 - Navbar 
-    -> scroll feature
+    -> smooth scroll 
     -> close upon clicking
 
 - Mobile Spacing:
