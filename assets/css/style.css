@@ -607,7 +607,7 @@ h3 {
         margin-top: -110px;
     }
 
-    article figure:before {
+    /* article figure:before { */
         /* add a border around the figure matching the color of the background, faking the clip */
         /* content: "";
         border-radius: inherit;
@@ -619,7 +619,7 @@ h3 {
         transform: translate(-50%, -50%);
         border: .35rem solid #612547; */
         /* box-shadow: 0 1px hsla(0, 0%, 0%, 0.1); */
-    }
+    /* } */
     
     .blockqoute-container {
         min-height: 220px;
