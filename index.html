@@ -19,7 +19,7 @@
         <img src="assets/img/typewriter-lisa-purple.jpg" class="typewriter-img" alt="Lisa Cunningham Typist Extraordinaire!">
     </div>
 
-    <!-- Navbar: About Me, What I Do, Resume, References, Contact -->
+    <!-- Navbar -->
     <nav class="navbar sticky-top navbar-expand-md navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,39 +27,35 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="nav justify-content-center flex-md-row flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-me-section">About Me</a>
+                    <a class="nav-link" href="#about-me-anchor">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#what-I-do-section">What I Do</a>
+                    <a class="nav-link" href="#resume-anchor">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#my-work-section">My Work</a>
+                    <a class="nav-link" href="#what-i-do-anchor">What I Do</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
                     <img class="navbar-logo" src="assets/img/4.png" height="50px" width="80px">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#resume-section">Resume</a>
+                    <a class="nav-link" href="#my-work-anchor">My Work</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#demo">References</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-section">Contact</a>
+                    <a class="nav-link" href="#contact-anchor">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-
-    <!-- markup structure
-    article, wrapping container
-        figure, wrapping the image
-        div, wrapping container for a quote and  the name of the testimonial
-    -->
+    <!-- About Me -->
     <section id="about-me-section" class="section">
         <article>
             <figure>
+                <div class="anchor-div" id="about-me-anchor"></div>
                 <img alt="Lisa's circle headshot" src="assets/img/lisa-bw-whitespace-square.jpg" />
             </figure>
             <!-- Blockquote -->
@@ -71,6 +67,7 @@
     </section>
 
     <!-- Resume: Printable PDF Button -->
+    <div class="anchor-div" id="resume-anchor"></div>
     <section id="resume-section" class="section">
         <div class="container-fluid">
             <div class="container-fluid">
@@ -94,7 +91,8 @@
     </section>
 
     <!-- What I Do -->
-    <section class="section container-fluid container-overlay d-flex flex-column justify-content-center align-content-center" id="what-I-do-section">            
+    <div class="anchor-div" id="what-i-do-anchor"></div>
+    <section class="section container-fluid container-overlay d-flex flex-column justify-content-center align-content-center" id="what-i-do-section">            
         <div class="row">
             <div class="col d-flex justify-content-center align-content-start">
                 <h1 class="brand-heading">What I Do</h1>
@@ -118,6 +116,7 @@
     </section>
 
     <!-- My Work -->
+    <div class="anchor-div" id="my-work-anchor"></div>
     <section class="section container-fluid d-flex flex-column justify-content-center" id="my-work-section">
         <div class="row">
             <div class="col d-flex justify-content-center align-content-center">
@@ -144,12 +143,7 @@
     <div id="demo" class="carousel slide" data-ride="carousel">
             <div class="container-fluid container-overlay d-flex flex-column justify-content-around">
                 <div class="carousel-section"></div>
-                <!-- <div class="row">
-                    <div class="col d-flex justify-content-center align-content-start"> -->
                         <h1 class="brand-heading">References</h1>
-                    <!-- </div>
-                </div> -->
-            
             
             <!-- The slideshow -->
             <div class="carousel-inner">
@@ -216,6 +210,7 @@
        
     
     <!-- Contact: Formspree -->
+    <div class="anchor-div" id="contact-anchor"></div>
     <section id="contact-section" class="container content-section text-center">
         <h1 class="brand-heading">Contact</h1>
         <div class="container-fluid">
@@ -245,7 +240,7 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
         <div id="footer" class="container-fluid">
 
             <div class="row">
@@ -282,9 +277,9 @@
                             </div>
                 
                             <div class="footer-links">
-                                    <a class="footer-link" data-value="#contact-section" href="#contact-section">Contact</a>
-                                <br><a class="footer-link" data-value="#contact-section" href="#contact-section">Hire Me</a>
-                                <br><a class="footer-link" data-value="#my-work-section" href="#my-work-section">Current Projects</a>
+                                    <a class="footer-link" data-value="#contact-anchor" href="#contact-anchor">Contact</a>
+                                <br><a class="footer-link" data-value="#contact-anchor" href="#contact-anchor">Hire Me</a>
+                                <br><a class="footer-link" data-value="#my-work-anchor" href="#my-work-anchor">Current Projects</a>
                             </div>
                             <div class="footer-links">
                                 <div class="dropdown"> 
@@ -320,9 +315,7 @@
 
             <div class="row">
                 <div class="col">
-                    <!-- <div class="copyright"> -->
                         <p><span class="footer-text">Lisa Cunningham &copy; 2019<span id="year" class="footer-text"></span></span></p>
-                    <!-- </div> -->
                 </div>
             </div> <!--Second Footer Row End-->
         </div>
@@ -346,6 +339,6 @@
 
     Use `col` for Columns that evenly fill across the viewport
     Use `col-auto` for Columns that shrink to fit their content
-    he Auto-layout Columns can be combined with the 12-unit Columns
+    The Auto-layout Columns can be combined with the 12-unit Columns
     The Auto-layout Columns have responsive tiers (-sm,-md,-lg,-xl) too!
 -->

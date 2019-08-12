@@ -95,8 +95,14 @@ button:focus {
 }
 
 .section {
-    margin: 80px 0px 20px 0px;
+    margin: 80px 0px 0px;
 }
+.anchor-div:target {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+  }
 
 
 /* CIRCLE IMG CARD
@@ -243,7 +249,7 @@ article div {
 /* WHAT I DO 
 =================================================*/
 
-#what-I-do-section {
+#what-i-do-section {
 	color: #fff;
     background-color: #612547;
     min-height: 500px;
@@ -287,7 +293,6 @@ h3 {
     border-left: 1000px solid transparent;
     border-right: 1000px solid;
 }
-Ã¢â‚¬â€¹
 #what-I-do-section:after, #what-I-do-section:before {
     content: '';
     position: absolute;
@@ -345,73 +350,26 @@ h3 {
 
 /* MY WORK
 =================================================*/
-/* #my-work-section { */
-
-#demo {
-    background-image: url("../img/library-card-2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 40px;
-    /* min-height: 500px; */
-    height: 100%;
-    /* padding-top: 40px; */
+#my-work-section {
+  padding-bottom: 40px;
 }
-
-#demo .container-overlay{
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100%;
-    width: 100%;
-    padding: 60px 0;
-}
-
-.carousel-inner {
-    margin: 0px auto;
-    width: 80%;
-    text-align: center;
-/*     position: relative;
-    clear: both; */
-/*     padding: 40px 0 80px; */
-    background: rgba(0,0,0,0.75);
-    background: rgba(255,255,255,0.75);
-    background: rgba(97,37,71,0.75);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.carousel-inner .carousel-item {
-    padding: 0 10% 5rem;
-    height: 250px;
-}
-.carousel-inner img {
-    width: 100%;
-    max-width: 1080px;
-    max-height: 500px;
-    margin: auto;
-    display: block;
-}
-.carousel-control-next, .carousel-control-prev {
-    width: 10%;
-}
-/* ======= */
-    /* margin-bottom: 80px;
-	height: 100%;
-} */
 #my-work-section i {
-  font-size: 80px;
-}
-#my-work-section a {
-    display: block;
-    color: #612547;
-    -webkit-transition: all linear .2s;
-    -moz-transition: all linear .2s;
-    -o-transition: all linear .2s;
-    -ms-transition: all linear .2s;
-    transition: all linear .2s
-}
-#my-work-section a:hover {
-  color: #f194be;
-  text-decoration: none;
-}
+    font-size: 80px;
+  }
+  #my-work-section a {
+      display: block;
+      color: #612547;
+      -webkit-transition: all linear .2s;
+      -moz-transition: all linear .2s;
+      -o-transition: all linear .2s;
+      -ms-transition: all linear .2s;
+      transition: all linear .2s
+  }
+  #my-work-section a:hover {
+    color: #f194be;
+    text-decoration: none;
+  }
+  
 
 /* REFERENCES
 =================================================*/
@@ -421,14 +379,13 @@ h3 {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 40px;
     width: 100%;
     height: 100%;
 }
 
 #demo .container-overlay{
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 60px 0;
+    padding: 80px 0;
     height: 100%;
     width: 100%;
 }
@@ -436,10 +393,8 @@ h3 {
 .carousel-inner {
     margin: 0px auto;
     width: 80%;
+    height: 300px;
     text-align: center;
-    /*     position: relative;
-    clear: both; */
-    /*     padding: 40px 0 80px; */
     background: rgba(0,0,0,0.75);
     background: rgba(255,255,255,0.75);
     background: rgba(97,37,71,0.9);
@@ -449,7 +404,7 @@ h3 {
 
 .carousel-inner .carousel-item {
     padding: 0 10% 5rem;
-    height: 350px; /* NOT PERMANENT */
+    /*height: 350px; /* NOT PERMANENT */
 }
 
 .carousel-inner img {
@@ -478,6 +433,9 @@ h3 {
 
 /*   CONTACT SECTION
 ===========================================*/
+#contact-section {
+  padding: 80px 0;
+}
 .contact-img {  
     position: absolute;  
     left: 0;  
@@ -624,7 +582,7 @@ h3 {
     text-align: center;
     color: #f194be;
     font-size: 16px;
-    font-family: ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œArialÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢, ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œHelvetica NeueÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢, Helvetica, sans-serif;
+    font-family: ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œArialÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢, ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã¢â‚¬Â¦ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œHelvetica NeueÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢, Helvetica, sans-serif;
 } 
 
 
@@ -674,5 +632,11 @@ h3 {
     max-height: 80%;
     display: block;
     margin: 10% auto;
+  }
+  .carousel-indicators {
+    display: none
+  }
+  .carousel-inner {
+    height: 450px;
   }
 }
