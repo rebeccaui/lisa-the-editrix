@@ -15,6 +15,7 @@
 html, body {
     background-color: #fffde8;
     scroll-behavior: smooth;
+    overflow-x: hidden 
 }
 
 .jumbotron {
@@ -596,7 +597,7 @@ h3 {
     }
 
     .section {
-        margin: 60px 20px;
+        margin: 60px 0px;
     }
 
     article figure {
