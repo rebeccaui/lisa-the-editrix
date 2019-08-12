@@ -228,7 +228,7 @@ article div {
 =================================================*/
 
 #resume-section {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .resume-column {
     padding: 15px;
@@ -239,7 +239,7 @@ article div {
 }
 
 .divider-column {
-    padding: 40px 15px 20px 15px;
+    padding: 40px 0 0;
 }
 
 .divider-img {
@@ -597,7 +597,7 @@ h3 {
     }
 
     .section {
-        margin: 60px 0px;
+        margin: 60px 0px 40px;
     }
 
     article figure {
@@ -625,6 +625,7 @@ h3 {
 
     .divider-img {
         width: 200px;
+        height: 54px;
     }
 }
 @media only screen and (max-width : 767px) {
@@ -639,5 +640,8 @@ h3 {
   }
   .carousel-inner {
     height: 450px;
+  }
+  .divider-column {
+    padding: 40px 0 0;
   }
 }
