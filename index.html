@@ -101,16 +101,22 @@
 
         <div class="row justify-content-around">
             <div class="col-md-4 align-content-center">
-                <img class="rounded-circle hover-effect" src="assets/img/copywriting.jpg" alt="Generic placeholder image" width="150" height="150">
-                <h3>Copywriting</h3>
+                <a class="modal-link" href="#" data-toggle="modal" data-target="#modal-copywriting">
+                    <img class="rounded-circle hover-effect" src="assets/img/copywriting.jpg" alt="Generic placeholder image" width="150" height="150">
+                    <h3>Copywriting</h3>
+                </a>
             </div>
             <div class="col-md-4 align-content-center">
-                <img class="rounded-circle hover-effect" src="assets/img/editing-newspaper.jpg" alt="Generic placeholder image" width="150" height="150">
-                <h3>Editing</h3>
+                <a class="modal-link" href="#" data-toggle="modal" data-target="#modal-editing">
+                    <img class="rounded-circle hover-effect" src="assets/img/editing-newspaper.jpg" alt="Generic placeholder image" width="150" height="150">
+                    <h3>Editing</h3>
+                </a>
             </div>
             <div class="col-md-4 align-content-center">
-                <img class="rounded-circle hover-effect" src="assets/img/proofreading.jpg" alt="Generic placeholder image" width="150" height="150">
-                <h3>Proofreading</h3>
+                <a class="modal-link" href="#" data-toggle="modal" data-target="#modal-proofreading">
+                    <img class="rounded-circle hover-effect" src="assets/img/proofreading.jpg" alt="Generic placeholder image" width="150" height="150">
+                    <h3>Proofreading</h3>
+                </a>
             </div>
         </div>
     </section>
@@ -325,6 +331,74 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/logic.js"></script>
+
+    <!-- Modals -->
+    <div class="modal fade" id="modal-copywriting" tabindex="-1" role="dialog" aria-labelledby="modal-copywriting" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Copywriting</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="modal-col modal-col-desc col-lg-12 col-md-12">
+                            <p style="text-align: center;">Technical documentation, SOPs, and handbooks are my specialty. If your business needs any kind of documentation drawn up or reconstructed, contact me.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-editing" tabindex="-1" role="dialog" aria-labelledby="modal-editing" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Editing</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="modal-col modal-col-desc col-lg-12 col-md-12">
+                            <p style="text-align: center;">Not only can I make sure that your writing is clear, is error-free, and maintains your authorial voice, but I can offer genre-related editing suggestions regarding content and cohesiveness. I am available to discuss any length of editing project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-proofreading" tabindex="-1" role="dialog" aria-labelledby="modal-proofreading" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="modal-title">Proofreading</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="modal-col modal-col-desc col-lg-12 col-md-12">
+                            <p style="text-align: center;">If you’re at a final stage before publication or submission, I will expertly line edit and grammar- and typo-check your document.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal-close-button btn btn-secondary" data-dismiss="modal">Awesome!</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
 
